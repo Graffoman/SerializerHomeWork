@@ -4,7 +4,7 @@ using SerializerHomework.MySerializers;
 using SerializerHomework.TestClasses;
 using System.Text.Json;
 
-int iterations = 10000000;
+int iterations = 1000000;
 
 var testClass = new F().Get();
 

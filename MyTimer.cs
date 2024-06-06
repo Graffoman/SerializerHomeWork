@@ -20,7 +20,7 @@ namespace SerializerHomework
 
             for (int i = 0; i < NumberOfIterations; i++)
             {
-                _ = actionToMeasure;
+                actionToMeasure();
             }
 
             sw.Stop();
@@ -41,12 +41,12 @@ namespace SerializerHomework
 
             for (int i = 0; i < NumberOfIterations; i++)
             {
-                _ = actionToMeasure;
+                actionToMeasure();
             }
 
             sw.Stop();
 
-            info += string.Format("ElapsedMilliseconds = {0}\r\n____________________\r\n", sw.ElapsedMilliseconds);
+            info += string.Format("ElapsedMilliseconds = {0}\r\n", sw.ElapsedMilliseconds);
 
             return info;
         }
